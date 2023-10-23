@@ -20,6 +20,6 @@ run:
 # 	cargo run
 
 deploy:
-	cargo run
+	cargo run square 5
 		
 all: install lint test format refactor
