@@ -38,7 +38,38 @@ Besides Rust and Cargo, the image comes with the following Rust related tooling:
 
 - [Ubuntu 18.04](https://releases.ubuntu.com/18.04.4/): The 18.04 LTS version of Ubuntu.
 
-## Usage
+## Tool Usage And Documentation
 
-#### Tool Setup
+### Pattern Generator
 
+This is a command-line tool written in Rust that generates cool and interesting patterns. It currently supports two types of patterns: squares and triangles.
+
+#### Installation
+Before you can use this tool, you need to install Rust. You can do this by following the instructions on the official Rust website.
+
+Once you have Rust installed, you can build and install the pattern generator tool by cloning this repository and running the following command in the root directory of the project:
+
+```
+cargo build --release
+```
+
+This will create an optimized executable in the target/release directory.
+
+Usage
+You can run the pattern generator tool using the cargo run command followed by the pattern type and size. For example, to generate a square pattern of size 5, you would use:
+
+```
+cargo run square 5
+```
+
+And to generate a triangle pattern of size 7, you would use:
+
+```
+cargo run triangle 7
+```
+
+The pattern type can be either square or triangle, and the size must be a positive integer.
+
+Please replace cargo run with the actual command to run your Rust application if it’s different.
+
+The CI/CD included in the deploy.yml file should automatically build and run an example of this.
