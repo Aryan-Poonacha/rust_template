@@ -18,5 +18,8 @@ refactor: format lint
 
 run:
 # 	cargo run
+
+deploy:
+	cargo run
 		
 all: install lint test format refactor
